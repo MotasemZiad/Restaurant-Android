@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="الشاشة الرئيسية"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home" />
+
+    <item android:title="الصفحة الشخصية"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_profile"/>
+
+    <item android:title="أقرب المطاعم"
+        android:id="@+id/nearestRestaurant"
+        android:icon="@drawable/ic_restaurant"/>
+
+    <!--<group android:checkableBehavior="single">
+        <item android:title="الشاشة الرئيسية"
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home" />
+
+
+        <item android:title="الصفحة الشخصية"
+            android:id="@+id/profile"
+            android:icon="@drawable/ic_profile"/>
+
+        <item android:title="أقرب المطاعم"
+            android:id="@+id/nearestRestaurent"
+            android:icon="@drawable/ic_profile"/>
+
+    </group>
+
+    <item android:title="تواصل">
+        <menu>
+            <item android:title="مشاركة"
+                android:id="@+id/share"
+                android:icon="@drawable/ic_share"/>
+
+            <item android:title="فيسبوك المطور1"
+                android:id="@+id/send"
+                android:icon="@drawable/ic_send"/>
+
+            <item android:title="خروج"
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_exit"/>
+        </menu>
+    </item>-->
+
+</menu>

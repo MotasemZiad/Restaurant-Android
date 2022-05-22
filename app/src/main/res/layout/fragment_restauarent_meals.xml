@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activityBackground"
+    tools:context=".userScreens.RestauarentMealsFragment" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/restaurant_meals_toolbar"
+        app:title="وجبات المطعم"
+        app:titleTextColor="@color/textColor"
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:elevation="10dp"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/restaurant_meals_recycler"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_meals_toolbar"
+        app:spanCount="2"
+        tools:listitem="@layout/meal_item" />
+
+    <ProgressBar
+        android:id="@+id/restaurant_meals_ProgressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/restaurant_meals_no_result_image"
+        android:layout_width="182dp"
+        android:layout_height="223dp"
+        android:src="@drawable/ic_no_result"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/restaurant_meals_no_result_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="لا يوجد نتائج"
+        android:textSize="30sp"
+        android:textColor="@color/textColor"
+        app:layout_constraintEnd_toEndOf="@+id/restaurant_meals_no_result_image"
+        app:layout_constraintStart_toStartOf="@+id/restaurant_meals_no_result_image"
+        app:layout_constraintTop_toBottomOf="@+id/restaurant_meals_no_result_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

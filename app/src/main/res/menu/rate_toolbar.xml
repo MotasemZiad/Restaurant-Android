@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/rating_star"
+        android:icon="@drawable/ic_rating_star"
+        android:title="rating"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/backArrowFromMealDetails"
+        android:icon="@drawable/ic_keyboard_arrow_left_black_24dp"
+        android:title="goBack"
+        app:showAsAction="always" />
+
+</menu>

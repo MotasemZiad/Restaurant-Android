@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/recyclerBackground">
+
+
+    <TextView
+        android:id="@+id/custome_rating_bar_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/textColor"
+        android:text="TextView" />
+
+    <TextView
+        android:textSize="16sp"
+        android:layout_marginTop="10dp"
+        android:textColor="#FFEB3B"
+        android:id="@+id/custome_rating_dialog_textResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+    <RatingBar
+        android:id="@+id/custome_rating_dialog_ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:stepSize="1"
+        android:theme="@style/ratingBarStyle"
+        android:rating="4"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:isIndicator="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/custome_rating_dialog_submit_btn"
+        style="@style/submitButtonStyle2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorAccent"
+        android:text="تأكيد" />
+</androidx.appcompat.widget.LinearLayoutCompat>
